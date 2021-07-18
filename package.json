@@ -1,7 +1,7 @@
 {
-  "name": "server_template",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Template of server express.js",
+  "description": "My site portfolio",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node index",
