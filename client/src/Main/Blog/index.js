@@ -1,6 +1,10 @@
+import Navigation from "../сomponents/Nav"
+
 const Blog = () => {
     return (
-        <>Blog</>
+        <>
+            <Navigation />
+        </>
     )
 }
 

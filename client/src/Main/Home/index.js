@@ -1,9 +1,9 @@
-import { SideMenu } from "../сomponents/Nav"
+import Navigation from "../сomponents/Nav"
 
 const Home = () => {
     return (
         <>
-            <SideMenu />
+            <Navigation />
         </>
     )
 }
