@@ -1,6 +1,10 @@
+import { SideMenu } from "../сomponents/Nav"
+
 const Home = () => {
     return (
-        <>Home</>
+        <>
+            <SideMenu />
+        </>
     )
 }
 
