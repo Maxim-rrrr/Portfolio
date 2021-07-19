@@ -22,8 +22,27 @@ img
 .container
   position: relative
   max-width: 1200px
-  padding: 0 2rem
-  margin: 0 auto
+  padding: 0 3rem
+  margin: 0 calc(130rem / 14)
+
+.section
+  &--full-screen
+    width: 100vw
+    height: 100vh
+
+.tag
+  font-family: 'La Belle Aurore', cursive
+  color: #515152
+  font-size: 1.3rem
+  padding: 5px 0
+  &--0
+    margin-left: 0
+  &--1
+    margin-left: 1.4rem
+  &--2
+    margin-left: 2.8rem
+
+
 
 @media screen and ( max-width: 1200px )
   html
