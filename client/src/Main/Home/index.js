@@ -1,5 +1,8 @@
 import Navigation from "../сomponents/Nav"
+import TitleLitter from "../сomponents/TitleLitter"
 import './style.sass'
+import Logo from '../../images/Logo.png'
+import { Link } from "react-router-dom"
 
 
 const Home = () => {
@@ -16,36 +19,36 @@ const Home = () => {
                     <div className="hero__text-box">
                         <div className="tag tag--3">{ '<h1>' }</div>
                         <h1 className="hero__hello">
-                            <span className="title-letter">П</span>
-                            <span className="title-letter">р</span>
-                            <span className="title-letter">и</span>
-                            <span className="title-letter">в</span>
-                            <span className="title-letter">е</span>
-                            <span className="title-letter">т</span>
-                            <span className="title-letter">,</span>
+                            <TitleLitter>П</TitleLitter>
+                            <TitleLitter>р</TitleLitter>
+                            <TitleLitter>и</TitleLitter>
+                            <TitleLitter>в</TitleLitter>
+                            <TitleLitter>е</TitleLitter>
+                            <TitleLitter>т</TitleLitter>
+                            <TitleLitter>,</TitleLitter>
                             <br/>
-                            <span className="title-letter">Я </span>
-                            <span className="title-letter">М</span>
-                            <span className="title-letter">а</span>
-                            <span className="title-letter">к</span>
-                            <span className="title-letter">с</span>
-                            <span className="title-letter">,</span>
+                            <TitleLitter>Я</TitleLitter>
+                            <img src={Logo} alt="" className='home__logo-in-title'/>
+                            <TitleLitter>а</TitleLitter>
+                            <TitleLitter>к</TitleLitter>
+                            <TitleLitter>с</TitleLitter>
+                            <TitleLitter>,</TitleLitter>
                             <br/>
-                            <span className="title-letter">В</span>
-                            <span className="title-letter">е</span>
-                            <span className="title-letter">б</span>
-                            <span className="title-letter">-</span>
-                            <span className="title-letter">Р</span>
-                            <span className="title-letter">а</span>
-                            <span className="title-letter">з</span>
-                            <span className="title-letter">р</span>
-                            <span className="title-letter">а</span>
-                            <span className="title-letter">б</span>
-                            <span className="title-letter">о</span>
-                            <span className="title-letter">т</span>
-                            <span className="title-letter">ч</span>
-                            <span className="title-letter">и</span>
-                            <span className="title-letter">к</span>
+                            <TitleLitter>В</TitleLitter>
+                            <TitleLitter>е</TitleLitter>
+                            <TitleLitter>б</TitleLitter>
+                            <TitleLitter>-</TitleLitter>
+                            <TitleLitter>Р</TitleLitter>
+                            <TitleLitter>а</TitleLitter>
+                            <TitleLitter>з</TitleLitter>
+                            <TitleLitter>р</TitleLitter>
+                            <TitleLitter>а</TitleLitter>
+                            <TitleLitter>б</TitleLitter>
+                            <TitleLitter>о</TitleLitter>
+                            <TitleLitter>т</TitleLitter>
+                            <TitleLitter>ч</TitleLitter>
+                            <TitleLitter>и</TitleLitter>
+                            <TitleLitter>к</TitleLitter>
                         </h1>
                         <div className="tag tag--3">{ '</h1>' }</div>
 
@@ -56,6 +59,13 @@ const Home = () => {
                             </div>
                             <div className="tag tag--3">{ '<p/>' }</div>
                         </div>
+
+                        <Link to='/contact'>
+                            <div class='home__btn-contact'>
+                                <span class="home__btn-contact__base"></span>
+                                <span class="home__btn-contact__text">Связаться!</span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </section>

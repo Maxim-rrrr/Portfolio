@@ -16,10 +16,41 @@
         font-size: 1.2rem
 
 
-.title-letter
-    color: #ffffff
-    transition: color 0.3s
-    letter-spacing: -2.5px
-    &:hover
+.home
+    &__logo-in-title
+        height: 4rem
+        margin-left: 1rem
+
+    &__btn-contact
+        position: relative
+        overflow: hidden
+
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 60px
+        width: 220px
+        margin-top: 1.4rem
+        margin-left: 1.4rem
+
+        border: 1px solid #08fdd8
         color: #08fdd8
+        font-size: 1.2rem
+
+        cursor: pointer
+        transition: color 0.5s
+        &:hover
+            color: #1d1d1d
+            &>.home__btn-contact__base
+                left: -1rem
+        &__base
+            z-index: -1
+            position: absolute
+            background: #08fdd8
+            height: 30rem
+            width: 30rem
+            top: -15rem
+            left: -35rem
+            transform: rotate(25deg)
+            transition: all 0.5s
     
