@@ -32,7 +32,7 @@ const TitleLitter = (props) => {
             if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
                 setView(true)
                 setTimeout(() => {
-                    animateElem('rotateIn')
+                    animateElem('bounceIn')
                 }, +props.delay)
 
                 document.removeEventListener('scroll', listener)
