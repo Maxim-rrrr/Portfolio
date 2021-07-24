@@ -1,31 +1,65 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './style.sass'
 
 const TitleLitter = (props) => {
     
     const [animate, setAnimate] = useState(false)
+    const [animation, setAnimation] = useState('zoomIn')
+    const [view, setView] = useState(false)
+    const [fade, setFade] = useState(false)
+    const elem = useRef(null)
 
-    const hoverHandler = () => {
-        console.log(123)
-
+    const animateElem = (anim) => {
         if (!animate) {
             setAnimate(true)
+            setAnimation(anim)
+            setFade(true)
+
+            const timer = setInterval(() => {
+                setAnimate(false)
+                clearInterval(timer)
+            }, 800)
         }
-
-        const timer = setInterval(() => {
-            setAnimate(false)
-
-            clearInterval(timer)
-        }, 800)
     }
 
-    return (
-        <>
-            {
-                animate ?
-                <span className="title-letter animate__animated animate__rubberBand">{props.children}</span> :
-                <span className="title-letter" onMouseEnter={() => {hoverHandler()}}>{props.children}</span>
+    useEffect(() => {
+        const listener = () => {
+            const docViewTop = window.scrollY
+            const docViewBottom = docViewTop + window.outerHeight
+            const elemTop = elem.current.offsetTop
+            const elemBottom = elem.current.offsetTop + elem.current.offsetHeight
+
+            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+                setView(true)
+                setTimeout(() => {
+                    animateElem('rotateIn')
+                }, +props.delay)
+
+                document.removeEventListener('scroll', listener)
             }
+        }
+
+        if (!view) {
+            document.addEventListener('scroll', listener)
+        }
+
+        listener()
+    }, [])
+
+    return (
+        <>  
+            {
+                !fade ?
+                <span className="title-letter title-letter--hidden" ref={elem}>{props.children}</span> :
+                <>
+                    {
+                        animate ?
+                        <span className={"title-letter animate__animated animate__" + animation}  ref={elem}>{props.children}</span> :
+                        <span className="title-letter"  ref={elem} onMouseEnter={() => {animateElem('rubberBand')}}>{props.children}</span>
+                    }
+                </>
+            }
+            
         </>
     )
 }

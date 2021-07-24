@@ -11,44 +11,43 @@ const Home = () => {
             <Navigation />
 
             <section className="section section--full-screen">
-                <div className="container">
-                    <div className="tag tag--0">{ '<html>' }</div>
-                    <div className="tag tag--1">{ '<body>' }</div>
-                    <div className="tag tag--2">{ '<section>' }</div>
+                <div className="container container--column">
+                    <div>
+                        <div className="tag tag--0">{ '<html>' }</div>
+                        <div className="tag tag--1">{ '<body>' }</div>
+                        <div className="tag tag--2">{ '<section>' }</div>
+                    </div>
 
                     <div className="hero__text-box">
                         <div className="tag tag--3">{ '<h1>' }</div>
                         <h1 className="hero__hello">
-                            <TitleLitter>П</TitleLitter>
-                            <TitleLitter>р</TitleLitter>
-                            <TitleLitter>и</TitleLitter>
-                            <TitleLitter>в</TitleLitter>
-                            <TitleLitter>е</TitleLitter>
-                            <TitleLitter>т</TitleLitter>
-                            <TitleLitter>,</TitleLitter>
+                            {
+                                'Привет,'.split('').map((elem, index) => {
+                                    return (
+                                        <TitleLitter delay={70 * index}>{elem}</TitleLitter>
+                                    )
+                                })
+                            }
                             <br/>
-                            <TitleLitter>Я</TitleLitter>
-                            <img src={Logo} alt="" className='home__logo-in-title'/>
-                            <TitleLitter>а</TitleLitter>
-                            <TitleLitter>к</TitleLitter>
-                            <TitleLitter>с</TitleLitter>
-                            <TitleLitter>,</TitleLitter>
+                            <TitleLitter delay={490}>Я</TitleLitter>
+                            
+                            <TitleLitter delay={560}><img src={Logo} alt="" className='home__logo-in-title'/></TitleLitter>
+                            
+                            {
+                                'акс,'.split('').map((elem, index) => {
+                                    return (
+                                        <TitleLitter delay={630 + 70 * index}>{elem}</TitleLitter>
+                                    )
+                                })
+                            }
                             <br/>
-                            <TitleLitter>В</TitleLitter>
-                            <TitleLitter>е</TitleLitter>
-                            <TitleLitter>б</TitleLitter>
-                            <TitleLitter>-</TitleLitter>
-                            <TitleLitter>Р</TitleLitter>
-                            <TitleLitter>а</TitleLitter>
-                            <TitleLitter>з</TitleLitter>
-                            <TitleLitter>р</TitleLitter>
-                            <TitleLitter>а</TitleLitter>
-                            <TitleLitter>б</TitleLitter>
-                            <TitleLitter>о</TitleLitter>
-                            <TitleLitter>т</TitleLitter>
-                            <TitleLitter>ч</TitleLitter>
-                            <TitleLitter>и</TitleLitter>
-                            <TitleLitter>к</TitleLitter>
+                            {
+                                'Веб-Разработчик'.split('').map((elem, index) => {
+                                    return (
+                                        <TitleLitter delay={700 + 70 * index}>{elem}</TitleLitter>
+                                    )
+                                })
+                            }
                         </h1>
                         <div className="tag tag--3">{ '</h1>' }</div>
 
@@ -61,14 +60,17 @@ const Home = () => {
                         </div>
 
                         <Link to='/contact'>
-                            <div class='home__btn-contact'>
-                                <span class="home__btn-contact__base"></span>
-                                <span class="home__btn-contact__text">Связаться!</span>
+                            <div className='home__btn-contact'>
+                                <span className="home__btn-contact__base"></span>
+                                <span className="home__btn-contact__text">Связаться!</span>
                             </div>
                         </Link>
                     </div>
+
+                    <div></div>
                 </div>
             </section>
+            <section className="section section--full-screen"></section>
         </>
     )
 }

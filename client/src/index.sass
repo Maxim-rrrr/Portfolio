@@ -24,11 +24,16 @@ img
   max-width: 1200px
   padding: 0 3rem
   margin: 0 calc(130rem / 14)
+  &--column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 100vh
 
 .section
   &--full-screen
     width: 100vw
-    height: 100vh
+    min-height: 100vh
 
 .tag
   font-family: 'La Belle Aurore', cursive
