@@ -1,5 +1,4 @@
 .side-menu
-    opacity: 1
     position: fixed
     z-index: 90
 
@@ -63,8 +62,8 @@
             fill: #08fdd8
 
 .hamburger-menu
-    opacity: 0
     &__button
+        display: none
         position: fixed
         right: 10px
         top: 10px
@@ -93,7 +92,7 @@
         transition: opacity 0.3s
 
 @media screen and ( max-width: 500px )
-    .hamburger-menu
-        opacity: 1
+    .hamburger-menu__button
+        display: block
     .side-menu
-        opacity: 0
+        display: none

@@ -23,7 +23,20 @@ img
   position: relative
   max-width: 1200px
   padding: 0 3rem
-  margin: 0 calc(130rem / 14)
+  margin: 0
+  margin-left: calc(130rem / 14)
+  &--column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 100vh
+  &--two-blocks
+    display: flex
+    min-width: 100%
+    justify-content: space-between
+
+.container-block
+  flex-basis: 45%
   &--column
     display: flex
     flex-direction: column
@@ -34,6 +47,13 @@ img
   &--full-screen
     width: 100vw
     min-height: 100vh
+
+.section-title
+  margin: 0
+  font-size: 4rem
+
+.link
+  color: #08fdd8
 
 .tag
   font-family: 'La Belle Aurore', cursive
@@ -48,8 +68,37 @@ img
     margin-left: 2.8rem
 
 
+.mobile
+  &-v
+    display: none
 
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
+  .mobile
+    &-v
+      display: block
+    &-h
+      display: none
+
+  .tag
+    font-size: 1.3rem
+    &--1
+      margin-left: 0
+    &--2
+      margin-left: 0
+      display: none
+  .container
+    margin: 0
+    &--two-blocks
+      flex-direction: column
+      justify-content: start
+      align-items: center
+
+  .container-block
+    flex-basis: 100%
+    width: 100%
+    min-height: 30vh
+    &--column
+      min-height: auto
 

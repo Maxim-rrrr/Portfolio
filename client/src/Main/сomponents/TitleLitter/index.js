@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react'
 import './style.sass'
 
 const TitleLitter = (props) => {
-    
     const [animate, setAnimate] = useState(false)
     const [animation, setAnimation] = useState('zoomIn')
     const [view, setView] = useState(false)
@@ -50,12 +49,12 @@ const TitleLitter = (props) => {
         <>  
             {
                 !fade ?
-                <span className="title-letter title-letter--hidden" ref={elem}>{props.children}</span> :
+                <span className="title-letter title-letter--hidden" ref={elem}>{props.children !== ' ' ? props.children : <span>&nbsp;</span>}</span> :
                 <>
                     {
                         animate ?
-                        <span className={"title-letter animate__animated animate__" + animation}  ref={elem}>{props.children}</span> :
-                        <span className="title-letter"  ref={elem} onMouseEnter={() => {animateElem('rubberBand')}}>{props.children}</span>
+                        <span className={"title-letter animate__animated animate__" + animation}  ref={elem}>{props.children !== ' ' ? props.children : <span>&nbsp;</span>}</span> :
+                        <span className="title-letter"  ref={elem} onMouseEnter={() => {animateElem('rubberBand')}}>{props.children !== ' ' ? props.children : <span>&nbsp;</span>}</span>
                     }
                 </>
             }

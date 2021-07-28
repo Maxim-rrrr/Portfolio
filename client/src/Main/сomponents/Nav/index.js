@@ -74,10 +74,13 @@ const HamburgerMenu = () => {
                 }
 
             </div>
-            
-            <div className="hamburger-menu__screen" style={{ opacity: +active }}>
-                <Menu />
-            </div>
+            {
+                active &&
+                <div className="hamburger-menu__screen" style={{ opacity: +active }}>
+                    <Menu />
+                </div>
+
+            }
         </div>
     )
 }
