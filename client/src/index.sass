@@ -16,8 +16,8 @@ img
   max-width: 100%
 
 // /*Убрать полосу прокрутки для всей страницы*/
-// ::-webkit-scrollbar 
-//   width: 0
+::-webkit-scrollbar 
+  width: 0
 
 .container
   position: relative
@@ -67,6 +67,36 @@ img
   &--2
     margin-left: 2.8rem
 
+.fade-in-up 
+  position: relative
+  animation-name: fadeUp
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  opacity: 0
+
+  
+@keyframes fadeUp
+  0%
+    opacity: 0
+    transform: translateY(30px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+.fade-in-right 
+  position: relative
+  animation-name: fadeRight
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  opacity: 0
+
+@keyframes fadeRight
+  0%
+    opacity: 0
+    transform: translateX(30px)
+  100%
+    opacity: 1
+    transform: translateX(0)
 
 .mobile
   &-v
@@ -89,7 +119,6 @@ img
       margin-left: 0
       display: none
   .container
-    margin: 0
     &--two-blocks
       flex-direction: column
       justify-content: start
@@ -101,4 +130,8 @@ img
     min-height: 30vh
     &--column
       min-height: auto
+@media screen and ( max-width: 580px )
+  .container
+    margin: 0
+
 

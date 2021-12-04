@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
 
                     <div className="hero__text-box">
-                        <div className="tag tag--3">{ '<h1>' }</div>
+                        <div className="tag tag--3 fade-in-right" style={{animationDelay: '1.3s'}}>{ '<h1>' }</div>
                         <h1 className="hero__hello">
                             {
                                 'Привет,'.split('').map((elem, index) => {
@@ -49,28 +49,32 @@ const Home = () => {
                                 })
                             }
                         </h1>
-                        <div className="tag tag--3">{ '</h1>' }</div>
+                        <div className="tag tag--3 fade-in-right" style={{animationDelay: '1.3s'}}>{ '</h1>' }</div>
 
                         <div className="hero__position-box">
-                            <div className="tag tag--3">{ '<p>' }</div>
-                            <div className="hero__text-position">
+                            <div className="tag tag--3 fade-in-right" style={{animationDelay: '2.5s'}}>{ '<p>' }</div>
+                            <div className="hero__text-position fade-in-up" style={{animationDelay: '2s'}}>
                                 Front-End / Back-End Developer
                             </div>
-                            <div className="tag tag--3">{ '<p/>' }</div>
+                            <div className="tag tag--3 fade-in-right" style={{animationDelay: '2.5s'}}>{ '<p/>' }</div>
                         </div>
 
                         <Link to='/contact'>
-                            <div className='home__btn-contact'>
+                            <div className="home__btn-contact fade-in-up" style={{animationDelay: '2.8s'}}>
                                 <span className="home__btn-contact__base"></span>
                                 <span className="home__btn-contact__text">Связаться!</span>
                             </div>
                         </Link>
                     </div>
 
-                    <div></div>
+                    <div>
+                        <div className="tag tag--2">{ '</section>' }</div>
+                    </div>
                 </div>
             </section>
-            <section className="section section--full-screen"></section>
+            <section className="section section--full-screen">
+                
+            </section>
         </>
     )
 }

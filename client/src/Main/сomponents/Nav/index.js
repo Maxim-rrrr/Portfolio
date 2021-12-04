@@ -17,7 +17,7 @@ const Menu = () => {
                 <Link to='/about'>   <div className="nav__item"> Обо мне  </div> </Link>
                 <Link to='/skills'>  <div className="nav__item"> Навыки   </div> </Link>
                 <Link to='/work'>    <div className="nav__item"> Работы   </div> </Link>
-                <Link to='/blog'>    <div className="nav__item"> Блог     </div> </Link>
+                {/* <Link to='/blog'>    <div className="nav__item"> Блог     </div> </Link> */}
                 <Link to='/contact'> <div className="nav__item"> Контакты </div> </Link>
             </nav>
 
