@@ -35,6 +35,18 @@ app.get("/3d-gallery", (req, res) => {
   res.sendFile(path.resolve(__dirname, "projects", "demo_3d_gallery", "dist", "index.html"));
 });
 
+app.use("/saytspb", express.static("./projects/saytspb/dist/"));
+app.get("/saytspb", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "saytspb", "dist", "index.html"));
+});
+
+app.use("/repair-design", express.static("./projects/repair-design/dist/"));
+app.get("/repair-design", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "repair-design", "dist", "index.html"));
+});
+
+
+
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 if (process.env.NODE_ENV === "production") {
