@@ -3,6 +3,12 @@ import mongoose from "mongoose";
 import config from "config";
 import path from "path";
 
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 import logger from "./modules/logger.js";
 import authRouter from './api/auth/authRouter.js'
 import createRoles from "./modules/createRoles.js"
@@ -22,8 +28,12 @@ app.use("/auth", authRouter)
 app.use("/uploads", express.static("uploads"));
 app.use("/file", express.static("file"));
 
-app.use("/3d-gallery", express.static("./demo_3d_gallery/dist/"));
 app.use("/img", express.static("./img/"));
+
+app.use("/3d-gallery", express.static("./projects/demo_3d_gallery/dist/"));
+app.get("/3d-gallery", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "demo_3d_gallery", "dist", "index.html"));
+});
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
