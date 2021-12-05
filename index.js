@@ -22,6 +22,9 @@ app.use("/auth", authRouter)
 app.use("/uploads", express.static("uploads"));
 app.use("/file", express.static("file"));
 
+app.use("/3d-gallery", express.static("./demo_3d_gallery/dist/"));
+app.use("/img", express.static("./img/"));
+
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 if (process.env.NODE_ENV === "production") {
