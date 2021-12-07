@@ -72,9 +72,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="section section--full-screen">
+            {/* <section className="section section--full-screen">
                 
-            </section>
+            </section> */}
         </>
     )
 }
