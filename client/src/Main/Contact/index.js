@@ -16,87 +16,90 @@ const Contact = () => {
             <Navigation />
 
             <section className="section section--full-screen">
-                <div className="container container--two-blocks">
-                    <div className="container-block container-block--column">
+                <div className="container container--two-blocks contact">
+                    <div className="container-block container-block--column contact__content">
                         <div>
                             <div className="tag tag--0">{ '<html>' }</div>
                             <div className="tag tag--1">{ '<body>' }</div>
                         </div>
                         <div>
-                            <div className="tag tag--2 fade-in-right" style={{animationDelay: '1.3s'}}>{ '<h2>' }</div>
-                            
-                            <h2 className="contact__title">
-                                {
-                                    'Связаться со мной'.split('').map((elem, index) => {
-                                        return (
-                                            <TitleLitter delay={70 * index}>{elem}</TitleLitter>
-                                        )
-                                    })
-                                }
-                            </h2>
 
-                            <div className="tag tag--2 fade-in-right" style={{animationDelay: '1.3s'}}>{ '</h2>' }</div>
-                        </div>
-                        <div>
-                            <div className="tag tag--2 fade-in-right" style={{animationDelay: '2s'}}>{ '<p>' }</div>
-                                <p className='contact__text-prev-form fade-in-up' style={{animationDelay: '1.7s'}}>
-                                    Меня интересуют возможности фрилансера - особенно амбициозные или крупные проекты. 
-                                    Однако, если у вас есть другой вопрос, не стесняйтесь использовать эту форму.
-                                </p>
-                            <div className="tag tag--2 fade-in-right" style={{animationDelay: '2s'}}>{ '</p>' }</div>
-                        </div>
-
-                        <div>
-                            <div className="tag tag--2 fade-in-right" style={{animationDelay: '3.5s'}}>{ '<form>' }</div>
-                            <div className="contact__form">
-
-                                <div className='contact__input-group fade-in-up' style={{animationDelay: '2.3s'}}>
-                                    <div className="contact__input contact__name">
-                                        <input 
-                                            value={name}
-                                            onChange={event => setName(event.target.value)}
-                                            type="text" 
-                                            placeholder='Имя'
-                                        />
-                                        <label></label>
-                                    </div>
-
-                                    <div className="contact__input contact__email">
-                                        <input 
-                                            value={email}
-                                            onChange={event => setEmail(event.target.value)}
-                                            type="email" 
-                                            placeholder='Email'
-                                        />
-                                        <label></label>
-                                    </div>
-                                </div>
-
-                                <div className="contact__input contact__subject fade-in-up" style={{animationDelay: '2.6s'}}>
-                                    <input 
-                                        value={subject}
-                                        onChange={event => setSubject(event.target.value)}
-                                        type="text" 
-                                        placeholder='Тема'
-                                    />
-                                    <label></label>
-                                </div>
-
-                                <div className="contact__input contact__message fade-in-up" style={{animationDelay: '2.9s'}}>
-                                    <textarea 
-                                        value={message}
-                                        onChange={event => setMessage(event.target.value)}
-                                        placeholder='Сообщение'
-                                    ></textarea>
-                                    <label></label>
-                                </div>
+                            <div>
+                                <div className="tag tag--2 fade-in-right" style={{animationDelay: '1.3s'}}>{ '<h2>' }</div>
                                 
-                                <div className="contact__btn-contact fade-in-up" style={{animationDelay: '3.2s'}}>
-                                    <span className="contact__btn-contact__base"></span>
-                                    <span className="contact__btn-contact__text">Отправить</span>
-                                </div>
+                                <h2 className="contact__title">
+                                    {
+                                        'Связаться со мной'.split('').map((elem, index) => {
+                                            return (
+                                                <TitleLitter delay={70 * index}>{elem}</TitleLitter>
+                                            )
+                                        })
+                                    }
+                                </h2>
+
+                                <div className="tag tag--2 fade-in-right" style={{animationDelay: '1.3s'}}>{ '</h2>' }</div>
                             </div>
-                            <div className="tag tag--2 fade-in-right" style={{animationDelay: '3.5s'}}>{ '</form>' }</div>
+                            <div>
+                                <div className="tag tag--2 fade-in-right" style={{animationDelay: '2s'}}>{ '<p>' }</div>
+                                    <p className='contact__text-prev-form fade-in-up' style={{animationDelay: '1.7s'}}>
+                                        Меня интересуют возможности фрилансера - особенно амбициозные или крупные проекты. 
+                                        Однако, если у вас есть другой вопрос, не стесняйтесь использовать эту форму.
+                                    </p>
+                                <div className="tag tag--2 fade-in-right" style={{animationDelay: '2s'}}>{ '</p>' }</div>
+                            </div>
+
+                            <div>
+                                <div className="tag tag--2 fade-in-right" style={{animationDelay: '3.5s'}}>{ '<form>' }</div>
+                                <div className="contact__form">
+
+                                    <div className='contact__input-group fade-in-up' style={{animationDelay: '2.3s'}}>
+                                        <div className="contact__input contact__name">
+                                            <input 
+                                                value={name}
+                                                onChange={event => setName(event.target.value)}
+                                                type="text" 
+                                                placeholder='Имя'
+                                            />
+                                            <label></label>
+                                        </div>
+
+                                        <div className="contact__input contact__email">
+                                            <input 
+                                                value={email}
+                                                onChange={event => setEmail(event.target.value)}
+                                                type="email" 
+                                                placeholder='Email'
+                                            />
+                                            <label></label>
+                                        </div>
+                                    </div>
+
+                                    <div className="contact__input contact__subject fade-in-up" style={{animationDelay: '2.6s'}}>
+                                        <input 
+                                            value={subject}
+                                            onChange={event => setSubject(event.target.value)}
+                                            type="text" 
+                                            placeholder='Тема'
+                                        />
+                                        <label></label>
+                                    </div>
+
+                                    <div className="contact__input contact__message fade-in-up" style={{animationDelay: '2.9s'}}>
+                                        <textarea 
+                                            value={message}
+                                            onChange={event => setMessage(event.target.value)}
+                                            placeholder='Сообщение'
+                                        ></textarea>
+                                        <label></label>
+                                    </div>
+                                    
+                                    <div className="contact__btn-contact fade-in-up" style={{animationDelay: '3.2s'}}>
+                                        <span className="contact__btn-contact__base"></span>
+                                        <span className="contact__btn-contact__text">Отправить</span>
+                                    </div>
+                                </div>
+                                <div className="tag tag--2 fade-in-right" style={{animationDelay: '3.5s'}}>{ '</form>' }</div>
+                            </div>
                         </div>
 
                         <div>

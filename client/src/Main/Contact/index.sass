@@ -96,4 +96,42 @@
             transform: rotate(25deg)
             transition: all 0.5s
     &__map
+        flex-basis: 40% !important
         filter:  url('#dark-blue-sepia') invert(1) hue-rotate(262deg)
+
+@media screen and ( max-width: 1200px )
+    .contact__content
+        min-height: 100vh !important
+        display: flex !important
+        flex-direction: column !important
+        justify-content: space-between !important
+        padding-right: 9rem
+    .contact
+        &__title
+            margin-left: 10px
+            margin-bottom: 2rem
+            text-align: center
+        &__text-prev-form
+            margin-left: 10px
+            margin-bottom: 2rem
+            text-align: center
+    .contact__map
+        display: none
+
+@media screen and ( max-width: 580px )
+    .contact
+        padding: 0 1rem !important
+        &__content
+            padding-right: 0
+        &__form
+            padding: 0 
+        &__input-group
+            display: flex
+            flex-direction: column
+        &__name
+            width: 100% !important
+            margin-bottom: 10px !important
+        &__email
+            width: 100% !important
+        &__btn-contact
+            margin: 2rem auto
