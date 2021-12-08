@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import logger from "./logger";
+import logger from "./logger.js";
 import config from 'config';
 
 /**
@@ -32,7 +32,7 @@ export default async function mail(
     })
 
     let result = await transporter.sendMail({
-      from: `"---" <${config.get('emailSendMessage')}>`,
+      from: `"Портфолио" <${config.get('emailSendMessage')}>`,
       to,
       subject,
       text,

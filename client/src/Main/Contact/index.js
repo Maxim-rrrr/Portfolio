@@ -2,10 +2,13 @@ import { useState } from "react";
 import Navigation from "../сomponents/Nav"
 import TitleLitter from "../сomponents/TitleLitter"
 import { YMaps, Map, Placemark } from "react-yandex-maps";
+import { useHttp } from "../../hooks/http.hook";
 
 import './index.sass'
 
 const Contact = () => {
+    const { request } = useHttp();
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
@@ -18,6 +21,7 @@ const Contact = () => {
         console.log('submit')
         setActivePopup(true)
         if (name && email && subject && message) {
+            request('/forms/contact', 'POST', {name, email, subject, message})
             setMessagePopup('Отправлено!')
             setName('')
             setEmail('')

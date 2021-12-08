@@ -17,6 +17,7 @@ import { ADMIN } from "./roles_list.js"
 import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 import swaggerOptions from "./swaggerOptions.js"
+import formsRouter from './api/forms/formsRouter.js'
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 
@@ -45,7 +46,7 @@ app.get("/repair-design", (req, res) => {
   res.sendFile(path.resolve(__dirname, "projects", "repair-design", "dist", "index.html"));
 });
 
-
+app.use("/forms", formsRouter)
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
