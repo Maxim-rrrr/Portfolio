@@ -11,6 +11,23 @@ const Contact = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
 
+    const [activePopup, setActivePopup] = useState(false)
+    const [messagePopup, setMessagePopup] = useState('')
+
+    const submit = event => {
+        console.log('submit')
+        setActivePopup(true)
+        if (name && email && subject && message) {
+            setMessagePopup('Отправлено!')
+            setName('')
+            setEmail('')
+            setSubject('')
+            setMessage('')
+        } else {
+            setMessagePopup('НЕ все поля заполнены :(')
+        }
+    }
+
     return (
         <>
             <Navigation />
@@ -56,7 +73,10 @@ const Contact = () => {
                                         <div className="contact__input contact__name">
                                             <input 
                                                 value={name}
-                                                onChange={event => setName(event.target.value)}
+                                                onChange={event => {
+                                                    setName(event.target.value)
+                                                    setActivePopup(false)
+                                                }}
                                                 type="text" 
                                                 placeholder='Имя'
                                             />
@@ -66,7 +86,10 @@ const Contact = () => {
                                         <div className="contact__input contact__email">
                                             <input 
                                                 value={email}
-                                                onChange={event => setEmail(event.target.value)}
+                                                onChange={event => {
+                                                    setEmail(event.target.value)
+                                                    setActivePopup(false)
+                                                }}
                                                 type="email" 
                                                 placeholder='Email'
                                             />
@@ -77,7 +100,10 @@ const Contact = () => {
                                     <div className="contact__input contact__subject fade-in-up" style={{animationDelay: '2.6s'}}>
                                         <input 
                                             value={subject}
-                                            onChange={event => setSubject(event.target.value)}
+                                            onChange={event => {
+                                                setSubject(event.target.value)
+                                                setActivePopup(false)
+                                            }}
                                             type="text" 
                                             placeholder='Тема'
                                         />
@@ -87,13 +113,16 @@ const Contact = () => {
                                     <div className="contact__input contact__message fade-in-up" style={{animationDelay: '2.9s'}}>
                                         <textarea 
                                             value={message}
-                                            onChange={event => setMessage(event.target.value)}
+                                            onChange={event => {
+                                                setMessage(event.target.value)
+                                                setActivePopup(false)
+                                            }}
                                             placeholder='Сообщение'
                                         ></textarea>
                                         <label></label>
                                     </div>
                                     
-                                    <div className="contact__btn-contact fade-in-up" style={{animationDelay: '3.2s'}}>
+                                    <div onClick={submit} className="contact__btn-contact fade-in-up" style={{animationDelay: '3.2s'}}>
                                         <span className="contact__btn-contact__base"></span>
                                         <span className="contact__btn-contact__text">Отправить</span>
                                     </div>
@@ -133,6 +162,13 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            
+            {
+                activePopup &&
+                <div className="popup fade-in-up">
+                    { messagePopup }
+                </div>
+            }
         </>
     )
 }
