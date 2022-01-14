@@ -10,7 +10,7 @@ const About = () => {
             <section className="section section--full-screen">
                 <div className="container container--two-blocks">
 
-                    <div className="container-block container-block--column">
+                <div className="container-block container-block--column">
                         <div>
                             <div className="tag tag--0">{ '<html>' }</div>
                             <div className="tag tag--1">{ '<body>' }</div>
