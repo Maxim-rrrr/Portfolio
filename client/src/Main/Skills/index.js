@@ -66,14 +66,77 @@ const Skills = () => {
                                     HTML CSS SASS
                                 </div>
                                 <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '80%'}}>
+                                    <div className="skills__stat-line__indicator" style={{width: '95%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
+                                    </div>
+                                </div>
 
+                                <div className="skills__stat-name">
+                                    JQuery
+                                </div>
+                                <div className="skills__stat-line">
+                                    <div className="skills__stat-line__indicator" style={{width: '80%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
+                                    </div>
+                                </div>
+                                
+                                <div className="skills__stat-name">
+                                    Three.js
+                                </div>
+                                <div className="skills__stat-line">
+                                    <div className="skills__stat-line__indicator" style={{width: '60%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
+                                    </div>
+                                </div>
+
+                                <div className="skills__stat-name">
+                                    React
+                                </div>
+                                <div className="skills__stat-line">
+                                    <div className="skills__stat-line__indicator" style={{width: '80%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
+                                    </div>
+                                </div>
+
+                                <div className="skills__stat-name">
+                                    Vue
+                                </div>
+                                <div className="skills__stat-line">
+                                    <div className="skills__stat-line__indicator" style={{width: '40%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='mobile-v'>
+                        <div className="skills__stat-block">
+                            <div className="skills__stat-block__title">
+                                Back-end
+                            </div>
+                            
+                            <div className="skills__stat">
+                                <div className="skills__stat-name">
+                                    Express.js
+                                </div>
+                                <div className="skills__stat-line">
+                                    <div className="skills__stat-line__indicator" style={{width: '60%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
+                                    </div>
+                                </div>
+
+                                <div className="skills__stat-name">
+                                    MongoDB
+                                </div>
+                                <div className="skills__stat-line">
+                                    <div className="skills__stat-line__indicator" style={{width: '50%'}}>
+                                        <div className="skills__stat-line__indicator__fill"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div className='mobile-v' style={{width: '100%'}}>
                             <div className="tag tag--2">{ '</section>' }</div>
                             <div className="tag tag--1">{ '</body>' }</div>
                             <div className="tag tag--0">{ '</html>' }</div>

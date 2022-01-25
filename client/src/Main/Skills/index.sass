@@ -11,6 +11,8 @@
         display: flex
         align-items: center
         justify-content: center
+        flex-direction: column
+        padding-right: 2rem
     &__stat
         margin-top: 1rem
         &-block
@@ -23,15 +25,35 @@
                 color: #08fdd8
                 font-size: 1.2rem
         &-name
+            margin-top: 1rem
             color: #fff
         &-line
             width: 100%
             margin-top: 0.5rem
             height: 3px
             background: #1D1D1D
+            border-radius: 2px
+            overflow: hidden
             &__indicator
                 height: 100%
-                background: #08fdd8
+                &__fill
+                    width: 0%
+                    height: 100%
+                    background: #08fdd8
+                    border-radius: 2px
+                    animation: stat 1s linear 0.3s 1 normal forwards
 
+
+@keyframes stat
+    0%
+        width: 0%
+    100%
+        width: 100%
+        
+                    
+@media screen and ( max-width: 580px ) 
+    .skills
+        &__container
+            padding-right: 0rem
 
         
