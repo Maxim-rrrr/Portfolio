@@ -32,7 +32,7 @@ const About = () => {
 
                             <div className="hero__position-box">
                                 <div className="tag tag--3">{ '<p>' }</div>
-                                <div className="hero__text-position">
+                                <div className="hero__text-position" style={{color: '#fff'}}>
                                     Я Web-разработчик. Мне нравится создавать класные и приятные в использовании приложения. 
                                     Обожаю видеть результаты своей работы по этому всегда оттачиваю каждую в своих проектах.
                                     Так же не проч поучаствовать в разработке игр и мобильных приложений. 
