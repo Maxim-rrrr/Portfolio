@@ -43,7 +43,7 @@ const Work = () => {
                             {/* <div className="project__status">demo</div> */}
                         </a>
 
-                        <a href='https://github.com/Maxim-rrrr/MERN_app_template' target="_blank" className='project'>
+                        <a href='/saytspb/' target="_blank" className='project'>
                             <img className="project__img" src={img_saytspb} alt="" />
                             <div className='project__content'>
                                 <div className="project__title"> SAYTSPB </div>
@@ -74,7 +74,7 @@ const Work = () => {
 
                     <h2 className='work__title'>Для разработчиков</h2>
                     <div className="projects">
-                        <a href='/repair-design/' target="_blank" className='project'>
+                        <a href='https://github.com/Maxim-rrrr/MERN_app_template' target="_blank" className='project'>
                             <img className="project__img" src={img_MERN_app_template} alt="" />
                             <div className='project__content'>
                                 <div className="project__title"> Шаблон для приложений на MERN </div>
