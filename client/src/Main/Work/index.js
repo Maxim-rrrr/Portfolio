@@ -1,11 +1,11 @@
 import Navigation from "../сomponents/Nav"
 import { Link } from "react-router-dom"
-import img_3d_gallery from "./images/3d_gallery.png"
-import img_mgs from "./images/mgs.png"
-import img_saytspb from "./images/saytspb.png"
-import img_repair_design from "./images/repair-design.png"
-import img_MERN_app_template from "./images/MERN_app_template.png"
-import img_Gulp from "./images/Gulp.png"
+import img_3d_gallery from "./images/3d_gallery.jpeg"
+import img_mgs from "./images/mgs.jpeg"
+import img_saytspb from "./images/saytspb.jpeg"
+import img_repair_design from "./images/repair-design.jpeg"
+import img_MERN_app_template from "./images/MERN_app_template.jpeg"
+import img_Gulp from "./images/Gulp.jpeg"
 
 import "./index.sass"
 
