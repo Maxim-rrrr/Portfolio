@@ -1,0 +1,57 @@
+.header
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__mobile
+    display: none
+    position: fixed
+    padding: 16px 0
+
+.logo
+  width: 56px
+  height: 56px
+.nav
+  &__item
+    margin-left: 6.1rem
+    font-size: 1.14rem
+    font-weight: 700
+    color: $white
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      color: $violet
+    &--active
+      color: $violet
+
+.hamburger-menu
+  cursor: pointer
+  &::before, &::after
+    content: ''
+    display: block
+    width: 22px
+    height: 3px
+    border-radius: 2px
+    background: $white
+    transform-origin: 50% 50%
+    transition: 0.3s
+  &::before
+    margin-bottom: 6px
+  &--active
+    &::before
+      transform: rotate(-45deg)
+      margin-bottom: 0
+    &::after
+      transform: rotate(45deg)
+      margin-top: -3px
+
+.mobile-bottom-line
+  position: fixed
+  z-index: 100
+  left: calc(50vw - 134px/2)
+  bottom: 8px
+  display: none
+  width: 134px
+  height: 5px
+  border-radius: 100px
+  background: $white

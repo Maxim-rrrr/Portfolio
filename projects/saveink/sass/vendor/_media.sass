@@ -1,0 +1,105 @@
+@media screen and ( max-width: 1260px )
+  .causes
+    &__img
+      right: -11%
+
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+  .hero
+    height: calc(100vh - 44px - 3rem)
+
+@media screen and ( max-width: 1120px )
+  .causes
+    &__item
+      &:nth-of-type(1)
+        margin-left: 0
+      &:nth-of-type(2)
+        margin-left: 0
+      &:nth-of-type(3)
+        margin-left: 0
+@media screen and ( max-width: 1000px )
+  .causes
+    &__title
+      margin: 0 auto 1rem
+      text-align: center
+
+    &__img
+      display: none
+    &__items
+      align-items: center
+    &__item
+      margin-bottom: 1rem
+
+  .section
+    min-height: auto
+
+  .hero
+    height: auto
+
+  .features__container
+    min-height: auto
+  .causes__container
+    height: auto
+    margin-top: 3rem
+  .arrow-down
+    display: none
+
+@media screen and ( max-width: 890px )
+  .hero
+    &__img
+      display: none
+    &__content
+      margin: 0
+    &__container
+      justify-content: center
+    &__app-store
+      margin: 0 auto
+
+  .card-box
+    flex-direction: column
+
+  .card
+    margin-bottom: 4rem
+
+  .footer__nav
+    padding: 30px 0
+    &>.nav__item
+      margin-left: 2.5rem
+@media screen and ( max-width: 768px )
+  .header
+    &__content
+      display: none
+    &__mobile
+      display: block
+      z-index: 100
+  .footer
+    &__navigation
+      display: none
+  .hero
+    padding-top: 4rem
+
+@media screen and ( max-width: 610px )
+  .causes
+    &__title
+      font-size: 2rem
+    &__item
+      &>img
+        width: 4rem
+        margin-right: 1rem
+    &__text
+      font-size: 1.5rem
+
+@media screen and ( max-width: 525px )
+  .hero
+    &__content
+      &-header
+        font-size: 2rem
+      &-footer
+        margin-bottom: 2rem
+  .section__title
+    font-size: 2.5rem
+
+@media screen and ( max-width: 400px )
+  html
+    font-size: 10px

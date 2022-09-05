@@ -1,0 +1,42 @@
+.mobile-menu
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  display: none
+  flex-direction: column
+  justify-content: flex-end
+  align-items: center
+  height: 100vh
+  width: 100vw
+  background: $main_blue url(../img/background.svg) no-repeat
+  &--active
+    display: flex
+  &__logo
+    height: 100%
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+    &>img
+      width: 200px
+  &__nav
+    width: 100vw
+    &-item
+      display: block
+      padding: 16px 0
+      font-weight: 600
+      font-size: 20px
+      line-height: 20px
+      text-align: center
+      color: $white
+      text-decoration: none
+      border-top: 1px solid #CCD3EE
+      border-bottom: 1px solid #CCD3EE
+      &--active
+        color: $violet
+        background: $white
+  &__copyright
+    margin-top: 80px
+    margin-bottom: 34px
+    text-align: center

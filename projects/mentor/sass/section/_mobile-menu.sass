@@ -1,0 +1,43 @@
+.mobile-menu
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  height: 100vh
+  width: 100vw
+  background: linear-gradient(359.79deg, #FEE3D2 0.18%, #535572 99.83%)
+  &--active
+    display: flex
+  &__logo
+    margin-top: 35px
+    &>img
+      width: 150px
+  &__title
+    font-family: 'Bree Serif', serif
+    font-size: 50.9037px
+    line-height: 128.4%
+    color: #F9CE9B
+  &__nav
+    width: 100vw
+    &-item
+      display: block
+      padding: 16px 0
+      font-weight: 600
+      font-size: 20px
+      line-height: 20px
+      text-align: center
+      color: $white
+      text-decoration: none
+      border-top: 1px solid rgba(#ffffff, 0.1)
+      border-bottom: 1px solid rgba(#ffffff, 0.1)
+      &--active
+        color: #42435D
+        background: $white
+  &__copyright
+    margin-top: 80px
+    margin-bottom: 24px
+    text-align: center

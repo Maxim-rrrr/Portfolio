@@ -4,6 +4,10 @@ import img_3d_gallery from "./images/3d_gallery.jpeg"
 import img_mgs from "./images/mgs.jpeg"
 import img_saytspb from "./images/saytspb.jpeg"
 import img_repair_design from "./images/repair-design.jpeg"
+import img_elearn from "./images/elearn.jpeg"
+import img_dodo from "./images/dodo.jpeg"
+import img_mentor from "./images/mentor.jpeg"
+import img_saveink from "./images/saveInk.jpeg"
 import img_MERN_app_template from "./images/MERN_app_template.jpeg"
 import img_Gulp from "./images/Gulp.jpeg"
 
@@ -69,6 +73,45 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="project__status">demo</div>
+                        </a>
+                    </div>
+
+                    <h2 className='work__title'>Написал работая в Alt Studio</h2>
+                    <div className="projects">
+                        <a href='/e-learning/' target="_blank" className='project'>
+                            <img className="project__img" src={img_elearn} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> DL e-Learning </div>
+                                <div className="project__description"> 
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/dodo/' target="_blank" className='project'>
+                            <img className="project__img" src={img_dodo} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> Dodo b2b </div>
+                                <div className="project__description"> 
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/mentor/' target="_blank" className='project'>
+                            <img className="project__img" src={img_mentor} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> Mentor </div>
+                                <div className="project__description"> 
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/saveink/' target="_blank" className='project'>
+                            <img className="project__img" src={img_saveink} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> SaveInk </div>
+                                <div className="project__description"> 
+                                </div>
+                            </div>
                         </a>
                     </div>
 

@@ -1,0 +1,33 @@
+.reasons
+    position: relative
+    &__bg-part
+        position: absolute
+        right: 0
+        z-index: -1
+    &__title
+        margin-top: calc(250rem / 14)
+        margin-bottom: calc(146rem / 14)
+    &__card
+        flex-basis: 33%
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:nth-child(2)
+            flex-direction: column-reverse
+    &__text
+        display: flex
+        align-items: center
+        justify-content: center
+        height: calc(340rem / 14)
+        max-width: calc(280rem / 14)
+        font-size: calc(20rem / 14)
+        line-height: 155.9%
+        &::before
+            content: ''
+            width: 1px
+            height: 150px
+            background-color: #fff
+            margin-left: calc(-48rem / 14)
+            margin-right: calc(48rem / 14)
+    &__img>img
+        width: calc(280rem / 14)

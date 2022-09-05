@@ -46,6 +46,27 @@ app.get("/repair-design", (req, res) => {
   res.sendFile(path.resolve(__dirname, "projects", "repair-design", "dist", "index.html"));
 });
 
+app.use("/e-learning", express.static("./projects/e-learning/dist/"));
+app.get("/e-learning", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "e-learning", "dist", "index.html"));
+});
+
+app.use("/dodo", express.static("./projects/dodo/dist/"));
+app.get("/dodo", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "dodo", "dist", "index.html"));
+});
+
+app.use("/mentor", express.static("./projects/mentor/dist/"));
+app.get("/mentor", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "mentor", "dist", "index.html"));
+});
+
+app.use("/saveink", express.static("./projects/saveink/dist/"));
+app.get("/saveink", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "projects", "saveink", "dist", "index.html"));
+});
+
+
 app.use("/forms", formsRouter)
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
