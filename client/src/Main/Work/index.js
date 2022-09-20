@@ -83,6 +83,9 @@ const Work = () => {
                             <div className='project__content'>
                                 <div className="project__title"> DL e-Learning </div>
                                 <div className="project__description"> 
+                                    Вёрстка на сборке через Gulp. 
+                                    В данном проекте было уделено большое внимание анимациям.
+                                    Отдельно отмечу работу над слайдером с проектами.
                                 </div>
                             </div>
                         </a>
@@ -92,6 +95,7 @@ const Work = () => {
                             <div className='project__content'>
                                 <div className="project__title"> Dodo b2b </div>
                                 <div className="project__description"> 
+                                    Лендинг для Додо Пицца. Разработывался под добавление функции Корпоративных заказов. 
                                 </div>
                             </div>
                         </a>
@@ -101,6 +105,7 @@ const Work = () => {
                             <div className='project__content'>
                                 <div className="project__title"> Mentor </div>
                                 <div className="project__description"> 
+                                    Лендинг для мобильного приложения Mentor.
                                 </div>
                             </div>
                         </a>
@@ -110,6 +115,7 @@ const Work = () => {
                             <div className='project__content'>
                                 <div className="project__title"> SaveInk </div>
                                 <div className="project__description"> 
+                                    Лендинг для мобильного приложения SaveInk.
                                 </div>
                             </div>
                         </a>
