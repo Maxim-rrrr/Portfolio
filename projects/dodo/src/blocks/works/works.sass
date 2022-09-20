@@ -1,0 +1,77 @@
+.works
+    font-family: 'Dodo_Rounded'
+    &__title
+        margin-bottom: 64px
+        font-weight: 900
+        font-variation-settings: 'wdth' 400
+        font-size: 40px
+        line-height: 125%
+        text-align: center
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: #000000
+    &__cards
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+.works-card 
+    flex-basis: 32%
+    background-color: #6690E2
+    background-repeat: no-repeat
+    border-radius: 32px
+    height: 325px
+    padding: 32px 24px 24px 24px
+    &-1
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        background-image: url('../img/works/card-img-1.svg')
+        background-position: 95% 50%
+        & .works-card__text
+            max-width: 230px
+    &-2
+        background-image: url('../img/works/card-img-2.png')
+        background-size: 75%
+        background-position: 60% 80%
+    &-3
+        background-position: bottom
+        background-size: 100%
+    &__title
+        margin-bottom: 12px
+        font-weight: 900
+        font-variation-settings: 'wdth' 400
+        font-size: 20px
+        line-height: 150%
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: #FFFFFF
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 135%
+        color: #FFFFFF
+    &__link
+        padding: 14px 16px
+        background: #FF6900
+        border-radius: 100px
+        font-weight: 400
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        color: #FFFFFF
+        text-decoration: none
+        transition: 1s
+        &:hover
+            box-shadow: 0px 8px 20px rgba(255, 105, 0, 0.5)
+.webp
+  .works-card
+    &-3
+      background-image: url('../img/works/card-img-3.webp'), url('../img/works/steam.webp')
+      background-position: bottom,top
+.no-webp
+  .works-card
+    &-3
+      background-image: url('../img/works/card-img-3.png'), url('../img/works/steam.png')
+      background-position: bottom,top
+

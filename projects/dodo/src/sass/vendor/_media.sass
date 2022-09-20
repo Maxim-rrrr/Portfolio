@@ -1,0 +1,346 @@
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+
+@media screen and ( max-width: 1140px )
+  .why-card
+    &-1>.why-card__img
+      margin-left: -16px
+
+@media screen and ( max-width: 992px )
+  .footer
+    &__row
+      &-1
+        flex-direction: column
+  .footer-nav
+    margin-right: 0
+    &__col
+      width: auto
+      flex-basis: 25%
+  .footer-apps
+    &__links
+      margin-top: 30px
+    &__email
+      text-align-last: left
+      margin-left: 4px
+
+
+@media screen and ( max-width: 920px )
+  .why__cards
+    flex-direction: column
+  .why-card
+    &__img
+      height: 200px
+    &__content
+      width: 60%
+
+@media screen and ( max-width: 890px )
+  .works-card 
+    &-1
+      background-size: 13%
+
+@media screen and ( max-width: 850px )
+  .works__title
+    margin-bottom: 32px
+
+  .works__cards
+    flex-direction: column
+  
+  .works-card
+    width: 100%
+    max-width: 500px
+    margin-bottom: 24px
+    &-1 
+      background-image: url('../img/works/card-img-1-mobile.svg')
+      background-size: 10%
+      background-position: 90% 50%
+      & .works-card__text
+        max-width: 80%
+        margin-bottom: 32px
+    &-2
+      min-height: 325px
+      background-position: 50% 80%
+      background-size: 50%
+    &-3
+      min-height: 325px
+    
+@media screen and ( max-width: 815px )
+  .footer-bottom
+    flex-direction: column-reverse
+    margin-top: 20px
+    &__social
+      margin-bottom: 16px
+
+@media screen and ( max-width: 800px )
+  .tastier-card
+    &__title
+      font-size: 16px
+    &__text
+      font-size: 14px
+
+@media screen and ( max-width: 768px ) 
+  .personal-area-card-1
+    &__content
+      flex-direction: column
+    &__list
+      margin-top: 24px
+      margin-left: 12px
+
+  .more
+    &__title
+      margin-bottom: 32px
+      &>span
+        width: 230px
+        &::after
+          top: -43px
+          right: 65px
+          transform: rotate(8deg)
+  .more-card
+    &-1
+      grid-row: 1
+      grid-column: 1 / 4
+    &-2
+      grid-row: 2
+      grid-column: 1 / 4
+    &-3
+      grid-row: 3
+      grid-column: 1 / 4
+      min-height: 142px
+
+@media screen and ( max-width: 700px )
+  .tastier-card
+    &__text
+      font-size: 16px
+    &-1
+        grid-column: 1 / 4
+        grid-row: 1
+    &-2
+        grid-column: 1 / 4
+        grid-row: 2
+    &-3
+        grid-column: 1 / 4
+        grid-row: 3
+        flex-direction: row
+        padding: 24px 34px
+        &>.tastier-card__right
+            margin-left: 32px
+            justify-content: start
+  .why-card
+    flex-direction: column
+    margin-bottom: 60px
+    &__content
+      margin-left: 0
+      margin-top: 16px
+      width: 80%
+    &__img
+      height: 100%
+  .why__map-wrap
+    overflow: hidden
+    margin-top: 4px
+    margin-bottom: 48px
+  .why__map
+    padding-left: 24px
+    padding-right: 24px
+    position: relative
+    height: 291px
+    max-width: none
+    left: 0px
+    filter: none
+  
+  .why-card-bottom
+    flex-direction: column
+    padding: 0 48px
+    &__text
+      margin-left: 0px
+
+@media screen and ( max-width: 668px )
+  .personal-area
+    margin-top: 73px
+    &__title
+      margin-bottom: 32px
+      &>span
+        display: flex
+        flex-direction: column
+        &::after
+          position: relative
+          bottom: 0
+  .personal-area-card
+    &-1
+        grid-column: 1 / 4
+        grid-row: 1
+    &-2
+        grid-column: 1 / 4
+        grid-row: 2
+    &-3
+        grid-column: 1 / 4
+        grid-row: 3
+
+@media screen and ( max-width: 600px )
+  .personal-area__img
+    height: 240px
+    width: 568px
+    max-width: none
+    position: relative
+    left: 0px
+
+@media screen and ( max-width: 576px )
+  .mobile-hiden
+    display: none !important
+  
+  .mobile-show
+    display: flex !important
+  .header
+    &__logo
+      &>span
+        margin-top: 3px
+  .tastier__grid
+    display: block
+  .tastier-card
+    flex-direction: column
+    padding: 32px 24px
+    margin-bottom: 24px
+    &__left
+      width: 100%
+      padding: 30px 0
+      margin-bottom: 32px
+    &__right
+      width: 100%
+      margin-left: 0
+    &__title
+      max-width: 200px
+    &-3
+      &>.tastier-card__left
+        padding: 0
+  
+  .faq
+    &__question
+      font-weight: 700
+      font-size: 16px
+      line-height: 20px
+      padding-right: 60px
+    &__answer
+      font-weight: 400
+      font-size: 16px
+      line-height: 20px
+
+  .footer
+    margin-top: 0
+    padding-top: 0
+    padding-bottom: 17px
+    &__row
+      &-1
+        margin-bottom: 16px
+
+  .footer-nav
+    padding-top: 16px
+    flex-direction: column
+    border-top: 1px solid #ffffff80
+    border-bottom: 1px solid #ffffff80
+    &__col
+      margin-bottom: 24px
+    &__title
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+    &__link
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+
+  .footer-apps
+    &__links
+      margin-top: 0
+      border-bottom: 1px solid #ffffff80
+      padding-bottom: 16px
+      &>a
+        margin: 0
+        margin-right: 8px
+    &__email
+      margin: 0
+      padding: 16px 0
+
+  .footer-bottom
+    &__nav-item
+      margin-bottom: 8px
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+    &__logo
+      margin-top: 30px
+    &__social
+      padding: 16px 0
+    &__social-link
+      margin: 0
+      margin-right: 10px
+
+@media screen and ( max-width: 530px ) 
+  .hero
+    padding-top: 32px
+    margin-top: 60px
+    &__corporate, &__orders
+      font-size: 16px
+      height: 41px
+      padding: 10px 18px
+      border: 2px solid #FFF0E6
+      border-radius: 16px
+    &__orders
+        margin-left: -16px
+        margin-top: 7px
+    &__titie
+      margin-top: 24px
+      font-size: 32px
+    &__text
+      font-size: 16px
+      padding: 0 20px
+    &__customer
+      font-size: 16px
+      line-height: 20px
+      padding: 14px 16px
+      border-radius: 24px
+      box-shadow: 0px 16px 40px rgba(255, 105, 0, 0.5)
+  .works-card-2
+    background-size: 75%
+
+  
+@media screen and ( max-width: 480px )
+  .header
+    padding: 15px 0
+    &__container
+      height: 30px
+    &__customer
+      display: none
+  
+  .works-card 
+    &-1
+      background-size: 13%
+      background-position: 95% 50%
+
+@media screen and ( max-width: 576px )
+  .header
+    .logo-mobile
+      display: block
+    .logo-desktop
+      display: none
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx)
+  body.webp 
+    .works-card
+      &-3
+        background-image: url('../img/works/card-img-3-2x.webp'), url('../img/works/steam2x.webp')
+        background-position: bottom,top
+    .more-card
+      &-2
+        background-image: url('../img/more/card-img-2x.webp')
+  body.no-webp
+    .works-card
+      &-3
+        background-image: url('../img/works/card-img-3-2x.png'), url('../img/works/steam2x.png')
+        background-position: bottom,top
+    .more-card
+      &-2
+        background-image: url('../img/more/card-img-2x.webp')

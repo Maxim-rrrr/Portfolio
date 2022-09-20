@@ -1,0 +1,193 @@
+.form
+    color: $font_color
+    padding-bottom: 56px
+    &__container
+        display: flex
+        flex-direction: column
+        max-width: 1208px
+        padding: 0 42px
+        margin: auto
+    &__title
+        margin-bottom: 64px
+        font-weight: 600
+        font-size: 72px
+        line-height: 100%
+        letter-spacing: -0.02em
+    &__input
+        width: 100%
+        padding-bottom: 16px
+        margin-bottom: 48px
+        border: none
+        border-bottom: 1px solid #DCDCDC
+        font-size: 24px
+        color: #171513
+        transition: 0.3s
+        &:focus
+            border-bottom: 1px solid #171513
+        &::placeholder
+            font-weight: 500
+            font-size: 24px
+            line-height: 100%
+            letter-spacing: -0.02em
+            color: #171513
+            opacity: 0.2
+        &--invalid
+            border-bottom: 1px solid #F96949
+            color: #F96949
+            &::placeholder
+                color: #F96949
+                opacity: 1
+        
+    &__bottom
+        display: flex
+        align-items: center
+    &__submit
+        padding: 19px 110px
+        font-weight: 700
+        font-size: 18px
+        line-height: 100%
+        letter-spacing: -0.02em
+        background: #FF9738
+        border-radius: 120px
+        border: none
+        cursor: pointer
+        transition: 0.2s
+        color: #171513
+        &--invalid
+            color: #f96949
+        &:hover
+            background: #FF7A00
+    &__checkbox
+        margin-left: 36px
+        &>input
+            visibility: hidden
+            position: absolute
+        &>input:checked+label::before
+            background: #171513
+            background-image: url('../img/form/check.svg')
+            background-repeat: no-repeat
+            background-position: center 
+        &>label
+            position: relative
+            cursor: pointer
+            margin-left: 28px
+            &::before
+                content: ''
+                position: absolute
+                left: -28px
+                top: 0
+                width: 16px
+                height: 16px
+                background: #FFFFFF
+                border: 2px solid #171513
+                cursor: pointer
+        & a
+            color: #171513
+            
+.loader 
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  display: inline-block
+  position: relative
+  border: 3px solid
+  border-color: #171513 #171513 transparent transparent
+  box-sizing: border-box
+  animation: rotation 1s linear infinite
+
+.loader::after,
+.loader::before 
+  content: ''  
+  box-sizing: border-box
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  border: 3px solid
+  border-color: transparent transparent #FF3D00 #FF3D00
+  width: 62px
+  height: 62px
+  border-radius: 50%
+  box-sizing: border-box
+  animation: rotationBack 0.5s linear infinite
+  transform-origin: center center
+
+.loader::before 
+  width: 54px
+  height: 54px
+  border-color: #171513 #171513 transparent transparent
+  animation: rotation 1.5s linear infinite
+
+    
+@keyframes rotation 
+  0% 
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(360deg)
+  
+ 
+@keyframes rotationBack 
+  0% 
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(-360deg)
+  
+
+.popup
+    display: flex
+    justify-content: center
+    align-items: center   
+    position: fixed
+    z-index: 1000
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.1)
+    display: none
+    &__content
+        width: 660px
+        height: 350px
+        background: #FFFFFF
+        & p
+            font-weight: 500
+            font-size: 18px
+            line-height: 150%
+            text-align: center
+        & button
+            padding: 19px 100px
+            font-weight: 700
+            font-size: 18px
+            line-height: 100%
+            letter-spacing: -0.02em
+            color: #FFFFFF
+            background: #171513
+            border-radius: 120px
+            cursor: pointer
+    &__load
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        // display: none
+    &__success, &__error
+        padding: 40px 0 48px
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        display: none
+    
+    
+        
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мосбиржа | Путь инвестора • DL e-Learning</title>
+  <link rel="icon" href="../img/favicon.ico" />
+
+  <link rel="stylesheet" href="../css/style.min.css">
+  <!-- font-family: 'Raleway', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js"></script> -->
+</head>
+<body>
+  @@include("../blocks/projectPages/header/header.html")
+  
+  <main class="project-page">
+    <div class="container">
+      <div class="project-page__title">
+        Обучающий курс «Мосбиржа | Путь инвестора»
+      </div>
+    </div>
+
+    <div class="project-page__content">
+      <div class="project-page__video">
+        <video src="../videos/project-1.mp4" loop autoplay muted></video>
+      </div>
+      <a href="https://school.moex.com/put-investora/" class="project-page__link">Ссылка на проект<img src="../img/project-pages/link.svg" alt=""></a>
+      <div class="project-page__description">
+        <span>Описание</span>
+        <div class="project-page__description-content">
+          <p>
+            Создали онлайн-курс для начинающих инвесторов. 
+            Задачей нашей команды была разработка концепции, дизайна и иллюстраций, 
+            всего текстового контента, анимации и 2D-роликов. 
+          </p>
+
+          <span>
+            Курс реализован в формате сайта и состоит из четырех модулей:
+          </span>
+          <ol>
+            <li>Принципы финансового планирования и инвестирования.</li>
+            <li>Разбор и аналитика инвестиционных продуктов.</li>
+            <li>Рекомендации для совершения сделок без ошибок.</li>
+            <li>Советы по защите прав инвестора.</li>
+          </ol>
+
+          <p>
+            Сайт проекта находится в открытом доступе. 
+            Любой желающий может бесплатно узнать о базовых инструментах инвестирования, 
+            составить план для достижения своих финансовых целей и начать пользоваться 
+            услугами биржевой площадки.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    @@include("../blocks/projectPages/slick/slick.html")
+  </main>
+
+  @@include("../blocks/projectPages/footer/footer.html")
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

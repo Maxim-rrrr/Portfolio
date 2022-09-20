@@ -1,0 +1,118 @@
+.quality
+    color: $font_color
+    padding-top: 96px
+    padding-bottom: 40px
+    &__container
+        max-width: 1208px
+        padding: 0 42px
+        margin: auto
+    &__title
+        font-weight: 600
+        font-size: 72px
+        line-height: 100%
+        letter-spacing: -0.02em
+        margin-bottom: 32px
+    &__item
+        position: relative
+        transition: 0.3s
+        font-weight: 500
+        font-size: 72px
+        line-height: 100%
+        letter-spacing: -0.02em
+        opacity: 0.2
+        padding-bottom: 32px
+        cursor: pointer
+
+$quality-item-colors: #FFDE38, #FC712B, #B283FF, #07BC7B, #FA5785
+
+@for $i from 1 through 5
+    .quality__item-#{$i}.quality__item--active
+        color: nth($quality-item-colors, $i)
+        opacity: 1
+
+.quality__item::before
+    content: ''
+    position: absolute
+    background-size: 100%
+    transition: 1s
+    opacity: 0
+
+.quality__item--active::before
+    opacity: 1
+
+.quality__item-1::before
+    width: 289px
+    height: 62px
+    top: -15px
+    left: 489px
+    background-image: url("../img/quality/arrow-1.png")
+
+.quality__item-2::before
+    width: 257px
+    height: 51.5px
+    top: -8px
+    left: 513px
+    background-image: url("../img/quality/arrow-2.png")
+
+.quality__item-3::before
+    width: 158.5px
+    height: 66px
+    top: 76px
+    left: 626px
+    background-image: url("../img/quality/arrow-3.png")
+
+.quality__item-4::before
+    width: 321.98px
+    height: 32px
+    top: 48px
+    left: 434px
+    background-image: url("../img/quality/arrow-4.png")
+
+.quality__item-5::before
+    width: 321.98px
+    height: 65.27px
+    top: -20px
+    left: 444px
+    background-image: url("../img/quality/arrow-5.png")
+
+.quality__item::after
+    position: absolute
+    top: 0
+    right: 0
+    transition: 1s
+    opacity: 0
+    font-weight: 500
+    font-size: 17px
+    line-height: 25px
+    letter-spacing: -0.015em
+    color: $font_color
+    width: 312px
+
+.quality__item--active::after
+    opacity: 1
+
+.quality__item-1::after
+    content: 'Методология наших проектов учитывает особенности и принципы обучения взрослых. Для этого наши методологи следят за мировыми практиками в сфере образования.'
+    top: -15px
+    
+.quality__item-2::after
+    content: 'Каждый проект — сочетание методологии и интерактивных форматов обучения. Курсом любопытно пользоваться — интерфейс вовлекает пользователей взаимодействовать с контентом.'
+    top: -10px
+
+.quality__item-3::after
+    content: 'Внедряем в образовательные проекты технологии — геймификацию, AR- и VR-инструменты, мэппинг и другие digital-решения.'
+    top: 89px
+
+.quality__item-4::after
+    content: 'Заточены на решение конкретных задач наших клиентов — если необходимо, создаем новые форматы и сценарии обучения.'
+    top: 30px
+    right: 21px
+
+.quality__item-5::after
+    content: 'Подадим даже самый сложный материал так, что взрослому станет интересно пройти его до конца.'
+    top: -24px
+    right: 26px
+
+
+
+    

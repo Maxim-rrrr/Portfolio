@@ -1,0 +1,98 @@
+.projects
+    position: relative
+    overflow-x: hidden
+    background: #171513
+    color: #FFFFFF
+    &__title
+        z-index: 100
+        position: absolute
+        margin: 0
+        top: 80px
+        font-weight: 700
+        font-size: 48px
+        line-height: 110%
+        letter-spacing: -0.02em
+    & .slick-list
+        padding: 222px 50px 120px !important
+
+    &__slide
+        margin: 0 20px
+        transition: 0.5s
+        display: flex
+        width: 312px
+            
+    &__cursor
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 200
+        pointer-events: none
+        position: fixed
+        top: 0
+        left: 0
+        width: 120px
+        height: 120px
+        border-radius: 50% 
+        opacity: 0
+        transition: opacity 0.3s, transform 0.2s
+        background-color: #fff   
+        background-image: url('../img/projects/cursor.svg') 
+        background-repeat: no-repeat
+        background-position: center
+        &--section
+            background-size: 70%
+            opacity: 1
+        &--slide
+            background-size: 0%
+            transform: scale(0.167)
+            transform-origin: center
+            // width: 20px
+            // height: 20px
+            opacity: 1
+.project
+    position: relative
+    width: 312px
+    transition: 0.5s
+    color: #FFFFFF
+    text-decoration: none
+    &::before
+        content: ''
+        position: absolute
+        width: 160px
+        height: 178px
+        left: 76px
+        top: 119px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        transition: 0.5s
+        transition-timing-function: ease-out
+        transform-origin: center
+
+    &__text-box
+        pointer-events: none
+        transition: 0.5s
+        transition-timing-function: ease-out
+    &__img
+        position: relative
+        transition: 0.5s
+        transition-timing-function: ease-out
+        transform-origin: center
+        pointer-events: none
+        // opacity: 0.5
+    &__title
+        margin: 19px 0 6px
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        letter-spacing: -0.02em
+    &__subtitle
+        font-weight: 500
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: -0.015em
+        opacity: 0.5
+
+@for $i from 1 through  5 
+  .project-#{$i}::before
+    background-image: url('../img/projects/effect-#{$i}.svg') 

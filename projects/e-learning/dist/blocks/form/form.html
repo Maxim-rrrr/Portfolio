@@ -1,0 +1,39 @@
+<section class="section form" id="form">
+    <form class="form__container">
+        <div class="form__title">А каким будет ваш проект?</div>
+        <input id="name" type="text" class="form__input" placeholder="Представьтесь">
+        <input id="tel" type="tel" class="form__input form__input-tel" placeholder="Телефон">
+        <input id="company" type="text" class="form__input"autocomplete="off" placeholder="Компания">
+        <input id="task" type="text" class="form__input"autocomplete="off" placeholder="Несколько слов о задаче">
+
+        <div class="form__bottom">
+            <button class="form__submit">Отправить</button>
+            <div class="form__checkbox">
+                <input type="checkbox" id="form-checkbox">
+                <label for="form-checkbox">Я принимаю условия <a href="">пользовательского&nbsp;соглашения</a></label>
+            </div>
+        </div>
+    </form>
+</section>
+
+<div class="popup">
+    <div class="popup__content">
+        <div class="popup__load"><span class="loader"></span></div>
+        <div class="popup__success">
+            <img src="./img/popup/success.svg" alt="">
+            <p>
+                Ваша заявка успешно отправлена. <br>
+                Мы ответим вам в ближайшее время.
+            </p>
+            <button class="popup__btn">Продолжить</button>
+        </div>
+        <div class="popup__error">
+            <img src="./img/popup/error.svg" alt="">
+            <p>
+                Ошибка. <br>
+                Попробуйте повторить запрос позже.
+            </p>
+            <button class="popup__btn">Продолжить</button>
+        </div>
+    </div>
+</div>

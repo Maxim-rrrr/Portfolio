@@ -1,0 +1,357 @@
+@media screen and ( min-width: 992px )
+  .projects__slick
+    & .projects__slide:hover
+      // margin: 0 180px
+      // margin-right: 180px
+      // transform: translate(-90px, 0)
+    & .project
+      &:hover
+        &::before
+          transform: scale(4)
+        & .project__img
+          transform: scale(1.37)
+        & .project__text-box
+          transform: translate(-58px, 65px)
+      &-1:hover
+        &::before
+          transform: scale(4.5) translate(0px, -5px)
+      &-2:hover
+        &::before
+          transform: scale(4.7) translate(0px, -5px)
+      &-3:hover
+        &::before
+          transform: scale(4.7) translate(0px, 0px) 
+  .projects__slide--prevhover
+    // margin-left: -180px
+    transform: translate(-180px, 0)
+  .projects__slide--nexthover
+    // margin-left: -180px
+    transform: translate(180px, 0)
+  
+  
+@media screen and ( max-width: 1215px )
+  .quality
+    &__container
+      padding: 0 30px
+    &__item
+      font-size: 48px
+  
+  .quality__item-1::before
+    top: -15px
+    left: 340px
+  .quality__item-1::after
+    top: -15px
+    right: 0
+    left: 650px
+
+  .quality__item-2::before
+    top: -26px
+    left: 339px
+  .quality__item-2::after
+    top: -64px
+    right: 0
+    left: 613px
+  
+  .quality__item-3::before
+    top: 57px
+    left: 373px
+  .quality__item-3::after
+    top: 73px
+    right: 0
+    left: 550px
+
+  .quality__item-4::before
+    top: 27px
+    left: 288px
+  .quality__item-4::after
+    top: -16px
+    right: 0
+    left: 628px
+
+  .quality__item-5::before
+    top: -39px
+    left: 297px
+  .quality__item-5::after
+    top: -68px
+    right: 0
+    left: 643px
+
+  
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+
+@media screen and ( max-width: 1010px )
+  .quality__item
+    padding-bottom: 48px
+    &--active
+      font-size: 72px
+      &::after, &::before
+        opacity: 0
+  
+@media screen and ( max-width: 992px )
+  .tile
+    padding: 80px 30px
+    height: 390px
+    &__title
+      font-size: 32px
+      letter-spacing: -0.015em
+    &__text
+      font-size: 16px
+      letter-spacing: -0.015em
+
+  @for $i from 1 through 4
+    .tile:nth-child(#{$i})
+      background-color: nth($colors, $i)
+      background-image: url("../img/tiles/#{$i}.svg")
+
+  .hero
+    &__video
+      // display: block  
+      position: relative
+      width: 336px
+      height: 336px
+      opacity: 1
+      pointer-events: auto
+      & video 
+        opacity: 1
+        height: 100%
+    &__center
+      padding: 0
+      margin-bottom: 140px
+      &>h1
+        font-size: 72px
+    &__bottom
+      &>a
+        margin-left: 88px
+    
+  .projects
+    &__cursor
+      display: none
+
+  .project-page
+    &__content
+      padding: 16px
+    &__title
+      font-size: 32px
+      padding: 32px 0 40px
+    &__link
+      font-size: 28px
+      margin-top: 40px
+      padding-bottom: 0
+      &>img
+        margin-left: 8px
+    &__description
+      flex-direction: column
+      &>span
+        flex-basis: 100%
+        margin-bottom: 16px
+      &-content
+        flex-basis: 100%
+        max-width: none
+  
+@media screen and ( max-width: 830px )
+  .quality__item
+    &--active
+      font-size: 54px
+
+@media screen and ( max-width: 810px )
+  .form
+    &__title
+      margin-bottom: 56px
+    &__bottom
+      flex-direction: column-reverse
+      align-items: start
+    &__checkbox
+      margin-left: 0
+      margin-bottom: 48px
+    &__container
+      padding: 0 30px
+    
+
+
+@media screen and ( max-width: 800px )
+  .brands
+    display: none
+    &-mobile
+      display: block
+  
+  .interesting
+    padding-top: 222px
+    padding-bottom: 216px
+    background-size: 30%
+    &__content
+      max-width: 470px
+    &__title
+      margin-bottom: 32px
+      font-size: 48px
+    &__text
+      max-width: 460px
+      font-size: 22px
+
+@media screen and ( max-width: 768px ) 
+  .container
+    padding: 0 30px
+
+  .tile
+    padding: 40px 16px
+    min-height: 342px
+  
+  .footer
+    padding: 40px 0 56px
+    &__container
+      padding: 0 58px
+    &__top
+      flex-direction: column
+      margin-bottom: 40.5px
+    &__contacts
+      margin-bottom: 40.5px
+    
+  .hero__social-link, .project-header__social-link
+    display: none
+  
+  .mobile-menu__show
+    display: block
+
+@media screen and ( max-width: 730px ) 
+  .popup
+    &__content
+      width: 400px
+
+@media screen and ( max-width: 670px ) 
+  .brands
+    padding-left: 16px
+    & .brands-img
+      min-height: 39px
+      background-size: contain
+    & .brands__slide
+      width: 228px
+      min-height: 39px
+      padding-right: 28px
+      margin-top: 34px
+      margin-bottom: 35px
+
+@media screen and ( max-width: 660px )
+  .quality
+    padding-top: 56px
+    padding-bottom: 29px
+    &__title
+      font-size: 40px
+      margin-bottom: 24px
+    &__item
+      padding-bottom: 32px
+      font-size: 24px
+      &--active
+        font-size: 40px
+      
+
+@media screen and ( max-width: 576px )
+  .container
+    padding: 0 16px
+  .interesting
+    padding-top: 120px
+    padding-bottom: 308px
+    background-size: 40%
+    &__content
+      max-width: 470px
+    &__title
+      margin-bottom: 32px
+      font-size: 40px
+    &__text
+      max-width: 460px
+      font-size: 18px
+  
+  .footer
+    padding: 24px 0 56px
+    &__container
+      padding: 0 16px
+    &__top
+      margin-bottom: 36.5px
+    &__contacts
+      margin-bottom: 36.5px
+
+  .form
+    &__title
+      font-size: 32px
+      line-height: 120%
+      margin-bottom: 40px
+    &__input
+      font-size: 18px
+      &::placeholder
+        font-size: 18px
+    &__checkbox
+      margin-left: 0px
+      margin-bottom: 48px
+      &>label
+        margin-left: 36px
+        line-height: 20px
+        &::before
+          top: -5px
+          left: -36px
+          width: 24px
+          height: 24px
+    &__submit
+      width: 100%
+    &__container
+      padding: 0 16px
+  
+  .popup
+    &__content
+      width: 100%
+
+  .hero
+    &__video
+      height: 185px
+      width: 185px
+      margin: 32px 0 16px
+    &__center
+      margin-bottom: 16px
+      &>h1
+        font-size: 38px
+        line-height: 120%
+    &__bottom
+      flex-direction: column
+      &>p
+        font-size: 16px
+      &>a
+        width: 100%
+        margin: 0
+        margin-top: 40px
+  .video-popup
+    &__content
+      width: 95%
+      height: 54vw
+  
+  .project
+    width: 250px
+    &__img
+      width: 250px
+    &__text-box
+      max-width: 250px
+  .projects
+    &__slick
+      margin: 0 0px
+    &__title
+      top: 24px
+    &__slide
+      margin: 0 20px
+      // padding-top: 100px
+      // padding-bottom: 44px
+      width: 250px
+    & .slick-list
+      padding: 100px 0px 44px !important
+  .tile
+    flex-basis: 100%
+
+  .projects-project-page
+    &__title
+      font-size: 32px
+    .projects
+      &__slide
+        padding-top: 54px
+
+@media screen and ( max-width: 395px )
+  .form
+    &__checkbox
+      & a
+        margin-left: 36px

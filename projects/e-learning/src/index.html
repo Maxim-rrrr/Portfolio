@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DL e-Learning</title>
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- font-family: 'Raleway', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js"></script> -->
+</head>
+<body>
+
+  @@include("blocks/header/header.html")
+  
+  <main class="main">
+    @@include("blocks/hero/hero.html")
+    @@include("blocks/brands/brands.html")
+    @@include("blocks/tiles/tiles.html")
+    @@include("blocks/interesting/interesting.html")
+    @@include("blocks/projects/projects.html")
+    @@include("blocks/quality/quality.html")
+    @@include("blocks/form/form.html")
+  </main>
+
+  @@include("blocks/footer/footer.html")
+
+  <div class="mobile-menu">
+    <div>
+        <div class="mobile-menu__top">
+            <div class="hero__logo">
+                <img src="./img/hero/logo-menu.svg" alt="">
+                <span>e-Learning</span>
+            </div>
+        </div>
+
+        <nav class="mobile-menu__nav">
+            <span>Меню</span>
+            <a href="/">Главная</a>
+            <a href="#projects" class="scrollto" href="">Проекты</a>
+            <a href="">Преимущества</a>
+        </nav>
+    </div>
+    
+    <a href="#form" class="scrollto mobile-menu__form-link">Начать проект</a>
+
+</div>
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

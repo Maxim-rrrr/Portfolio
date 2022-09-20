@@ -1,0 +1,50 @@
+.header
+    top: 0
+    width: 100%
+    position: fixed
+    z-index: 1000
+    padding: 25px 0
+    backdrop-filter: blur(64px)
+    background: rgba(255, 255, 255, 0.1)
+    font-family: 'Dodo_Rounded'
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        display: flex
+        &>span
+            height: 18px
+            padding: 4px
+            margin-left: 5px
+            margin-top: 4px
+            font-style: normal
+            font-weight: 700
+            font-size: 12px
+            line-height: 80%
+            text-align: center
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: #000000
+            border: 1px solid #000000
+            border-radius: 12px
+        .logo-mobile
+          display: none
+    &__customer
+        padding: 10px 16px
+        line-height: 20px
+        text-align: center
+        color: #FFFFFF
+        background: #FF6900
+        border-radius: 100px
+        text-decoration: none
+        transition: box-shadow 1s
+        &:hover
+            box-shadow: 0px 8px 20px rgba(255, 105, 0, 0.5)
+
+  
+@-moz-document url-prefix() 
+    .header
+        background-color: rgba(255, 255, 255, .1)
+        -webkit-backdrop-filter: blur(2em)
+        backdrop-filter: blur(2em)
