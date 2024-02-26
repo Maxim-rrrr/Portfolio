@@ -56,83 +56,49 @@ const Skills = () => {
                     </div>
 
                     <div className="container-block skills__container">
-                        <div className="skills__stat-block">
+                        <div className="skills__stat-block fade-in-down">
                             <div className="skills__stat-block__title">
                                 Front-end
                             </div>
                             
                             <div className="skills__stat">
-                                <div className="skills__stat-name">
-                                    HTML CSS SASS
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '95%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
-
-                                <div className="skills__stat-name">
-                                    JQuery
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '80%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
-                                
-                                <div className="skills__stat-name">
-                                    Three.js
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '60%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
-
-                                <div className="skills__stat-name">
-                                    React
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '80%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
-
-                                <div className="skills__stat-name">
-                                    Vue
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '40%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
+                                {
+                                    [
+                                        'HTML',
+                                        'CSS',
+                                        'SASS',
+                                        'React',
+                                        'Next.js',
+                                        'React Native',
+                                        'Tailwindcss',
+                                        'Three.js',
+                                    ].map((value, index) => (
+                                        <div key={value} className="skills__tag fade-in-right" style={{animationDelay: `${0.5 + index * 0.3}s`}}>
+                                            {value}
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
 
-                        <div className="skills__stat-block">
+                        <div className="skills__stat-block fade-in-down">
                             <div className="skills__stat-block__title">
                                 Back-end
                             </div>
                             
                             <div className="skills__stat">
-                                <div className="skills__stat-name">
-                                    Express.js
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '60%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
-
-                                <div className="skills__stat-name">
-                                    MongoDB
-                                </div>
-                                <div className="skills__stat-line">
-                                    <div className="skills__stat-line__indicator" style={{width: '50%'}}>
-                                        <div className="skills__stat-line__indicator__fill"></div>
-                                    </div>
-                                </div>
-                                
+                                {
+                                    [
+                                        'Laravel',
+                                        'Express',
+                                        'SQL',
+                                        'MongoDB',
+                                    ].map((value, index) => (
+                                        <div key={value} className="skills__tag fade-in-right" style={{animationDelay: `${0.5 + index * 0.3}s`}}>
+                                            {value}
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
 

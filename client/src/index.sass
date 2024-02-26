@@ -75,6 +75,13 @@ img
   animation-fill-mode: forwards
   opacity: 0
 
+.fade-in-down
+  position: relative
+  animation-name: fadeDown
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  opacity: 0
+
 .popup
   min-width: 100px
   text-align: center
@@ -89,6 +96,14 @@ img
   0%
     opacity: 0
     transform: translateY(30px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes fadeDown
+  0%
+    opacity: 0
+    transform: translateY(-30px)
   100%
     opacity: 1
     transform: translateY(0)
