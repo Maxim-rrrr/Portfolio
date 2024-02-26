@@ -10,6 +10,9 @@ import img_mentor from "./images/mentor.jpeg"
 import img_saveink from "./images/saveInk.jpeg"
 import img_MERN_app_template from "./images/MERN_app_template.jpeg"
 import img_Gulp from "./images/Gulp.jpeg"
+import img_tots from "./images/tots.jpg"
+import img_resultrest from "./images/resultrest.jpg"
+
 
 import "./index.sass"
 
@@ -19,6 +22,75 @@ const Work = () => {
             <Navigation />
             <section className="section section--full-screen">
                 <div className="work__container">
+                <h2 className='work__title'>Написал работая в Alt Studio</h2>
+                    <div className="projects">
+                        <a href='https://result.rest/' target="_blank" className='project'>
+                            <img className="project__img" src={img_resultrest} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> Result Rest </div>
+                                <div className="project__description"> 
+                                    Платформа предоставляет владельцам доставок еды единую систему управления, генерирует сайт, Vk app и мобилные приложения (Android/IOS) из настроек компнии в CRM. <br/><br/>
+                                    Ведущий разработчик всего фронтенда кроме лендинга на тильде) <br/><br/>
+                                    CRM - React, Сайты доставок - Next.js, VK app - React, Android/IOS - React Native
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='https://help-here.redcross.ru/' target="_blank" className='project'>
+                            <img className="project__img" src={img_tots} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> Здесь помогают </div>
+                                <div className="project__description"> 
+                                    Сайт от отделения российского красного креста.
+                                    Писал фронт шести личных кабинетов под каждую роль на Next.js
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/e-learning/' target="_blank" className='project'>
+                            <img className="project__img" src={img_elearn} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> DL e-Learning </div>
+                                <div className="project__description"> 
+                                    Вёрстка на сборке через Gulp. 
+                                    В данном проекте было уделено большое внимание анимациям.
+                                    Отдельно отмечу работу над слайдером с проектами.
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/dodo/' target="_blank" className='project'>
+                            <img className="project__img" src={img_dodo} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> Dodo b2b </div>
+                                <div className="project__description"> 
+                                    Лендинг для Додо Пицца. Разработывался под добавление функции Корпоративных заказов. 
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/mentor/' target="_blank" className='project'>
+                            <img className="project__img" src={img_mentor} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> Mentor </div>
+                                <div className="project__description"> 
+                                    Лендинг для мобильного приложения Mentor.
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href='/saveink/' target="_blank" className='project'>
+                            <img className="project__img" src={img_saveink} alt="" />
+                            <div className='project__content'>
+                                <div className="project__title"> SaveInk </div>
+                                <div className="project__description"> 
+                                    Лендинг для мобильного приложения SaveInk.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <h2 className='work__title'>PET-проекты</h2>
                     <div className="projects">
                         <a href='/3d-gallery/' target="_blank" className='project'>
                             
@@ -73,51 +145,6 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="project__status">demo</div>
-                        </a>
-                    </div>
-
-                    <h2 className='work__title'>Написал работая в Alt Studio</h2>
-                    <div className="projects">
-                        <a href='/e-learning/' target="_blank" className='project'>
-                            <img className="project__img" src={img_elearn} alt="" />
-                            <div className='project__content'>
-                                <div className="project__title"> DL e-Learning </div>
-                                <div className="project__description"> 
-                                    Вёрстка на сборке через Gulp. 
-                                    В данном проекте было уделено большое внимание анимациям.
-                                    Отдельно отмечу работу над слайдером с проектами.
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href='/dodo/' target="_blank" className='project'>
-                            <img className="project__img" src={img_dodo} alt="" />
-                            <div className='project__content'>
-                                <div className="project__title"> Dodo b2b </div>
-                                <div className="project__description"> 
-                                    Лендинг для Додо Пицца. Разработывался под добавление функции Корпоративных заказов. 
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href='/mentor/' target="_blank" className='project'>
-                            <img className="project__img" src={img_mentor} alt="" />
-                            <div className='project__content'>
-                                <div className="project__title"> Mentor </div>
-                                <div className="project__description"> 
-                                    Лендинг для мобильного приложения Mentor.
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href='/saveink/' target="_blank" className='project'>
-                            <img className="project__img" src={img_saveink} alt="" />
-                            <div className='project__content'>
-                                <div className="project__title"> SaveInk </div>
-                                <div className="project__description"> 
-                                    Лендинг для мобильного приложения SaveInk.
-                                </div>
-                            </div>
                         </a>
                     </div>
 
